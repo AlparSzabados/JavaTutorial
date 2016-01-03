@@ -16,7 +16,7 @@ public class CreditCardTest {
     @Before
     public void setUp() throws Exception {
         card1 = new CreditCard("Kóter Péter");
-        card2 = new CreditCard("Pap Lőrinc", 1000);
+        card2 = new CreditCard("Szabados Alpár", 1000);
     }
 
     @Test
@@ -28,7 +28,7 @@ public class CreditCardTest {
 
     @Test
     public void testCreditCardStringInt() {
-        assertEquals("Pap Lőrinc", card2.getCardholder());
+        assertEquals("Szabados Alpár", card2.getCardholder());
         assertEquals(1000, card2.getCreditLimit());
         assertEquals(0, card2.getBalance());
     }
