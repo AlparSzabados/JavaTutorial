@@ -1,12 +1,10 @@
-package introtocs.creditcard;
+package introtocs.test.java.creditcard;
 
 import static org.junit.Assert.*;
 
+import introtocs.main.java.creditcard.CreditCard;
 import org.junit.Before;
 import org.junit.Test;
-
-import javax.swing.*;
-
 
 public class CreditCardTest {
 
