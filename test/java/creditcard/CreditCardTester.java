@@ -1,18 +1,17 @@
-package introtocs.creditcard;
+package introtocs.test.java.creditcard;
+
+import introtocs.main.java.creditcard.CreditCard;
 
 import java.util.ArrayList;
 
 public class CreditCardTester {
     public static void main(String[] args) {
-        // Collection of creditCards.
         ArrayList<CreditCard> cards = new ArrayList<CreditCard>();
 
-        // Our credit card objects.
         CreditCard card1 = new CreditCard("John Doe", 2500);
         CreditCard card2 = new CreditCard("Szabados Istvan", 1400);
         CreditCard card3 = new CreditCard("Horvath Alpar", 750);
 
-        // CreditCard purchases.
         card1.makePurchase(1000);
         card1.makePurchase(1500);
 
@@ -22,17 +21,14 @@ public class CreditCardTester {
 
         card3.makePurchase(900);
 
-        // CreditCard payments.
         card1.makePayment(50);
         card2.makePayment(25);
         card3.makePayment(75);
 
-        // Add CreditCards to cards ArrayList.
         cards.add(card1);
         cards.add(card2);
         cards.add(card3);
 
-        // Printing our CreditCard information.
         for (CreditCard card : cards){
             System.out.println("The cardholder is: " + card.getCardholder());
             System.out.println("Total credit limit: " + card.getCreditLimit());
