@@ -21,7 +21,6 @@ public class CreditCard {
         this();
         cardholder = name;
         creditLimit = amount;
-
     }
 
     public int getCreditLimit() {
