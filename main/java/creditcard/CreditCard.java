@@ -1,7 +1,7 @@
 package introtocs.main.java.creditcard;
 
 public class CreditCard {
-    private int creditLimit;
+    private int creditLimit = 500;
     private int balance;
     private String cardholder;
     private int purchases;
@@ -9,13 +9,14 @@ public class CreditCard {
     //TODO learn how to chain the two constructors
 
     public CreditCard() {
-        creditLimit = 500;
+
     }
 
-    public CreditCard(String name){
+    public CreditCard(String name) {
         this();
         cardholder = name;
     }
+
     public CreditCard(String name, int amount) {
         this();
         cardholder = name;
