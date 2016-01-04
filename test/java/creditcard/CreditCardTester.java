@@ -9,8 +9,8 @@ public class CreditCardTester {
         ArrayList<CreditCard> cards = new ArrayList<CreditCard>();
 
         CreditCard card1 = new CreditCard("John Doe", 2500);
-        CreditCard card2 = new CreditCard("Szabados Istvan", 1400);
-        CreditCard card3 = new CreditCard("Horvath Alpar", 750);
+        CreditCard card2 = new CreditCard("Szabados István", 1400);
+        CreditCard card3 = new CreditCard("Horváth Alpár", 750);
 
         card1.makePurchase(1000);
         card1.makePurchase(1500);
