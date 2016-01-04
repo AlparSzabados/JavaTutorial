@@ -6,20 +6,21 @@ public class CreditCard {
     private String cardholder;
     private int purchases;
 
-    //TODO chain the two constructors
+    //TODO learn how to chain the two constructors
 
-    public CreditCard(String name) {
+    public CreditCard() {
         creditLimit = 500;
-        balance = 0;
-        cardholder = name;
-        purchases = 0;
     }
 
-    public CreditCard(String name, int amount) {
-        creditLimit = amount;
-        balance = 0;
+    public CreditCard(String name){
+        this();
         cardholder = name;
-        purchases = 0;
+    }
+    public CreditCard(String name, int amount) {
+        this();
+        cardholder = name;
+        creditLimit = amount;
+
     }
 
     public int getCreditLimit() {
