@@ -6,7 +6,7 @@ def cards = new ArrayList<CreditCard>()
 
 CreditCard card1 = new CreditCard("Kóter Péter", 2500)
 CreditCard card2 = new CreditCard("Szabados István", 1400)
-CreditCard card3 = new CreditCard("Horvath Alpár", 750)
+CreditCard card3 = new CreditCard("Horváth Alpár", 750)
 
 card1.makePurchase(1000)
 card1.makePurchase(1500)
